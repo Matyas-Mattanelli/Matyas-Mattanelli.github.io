@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <p id="demo">Welcome!</p>
+        <button type="button" onclick="myFunction()">
+            Click Me!
+        </button>
+        <script>
+            function myFunction() {
+                if (document.getElementById('demo').innerHTML == "Welcome!") {
+                    document.getElementById('demo').innerHTML = "Nice job!"
+                } else {
+                    document.getElementById('demo').innerHTML = "Welcome!"
+                }
+            }
+        </script>
+    </body>
+</html>
