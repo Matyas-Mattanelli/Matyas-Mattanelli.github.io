@@ -1,17 +1,17 @@
+<!DOCTYPE html>
 <html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="myScript.js"></script>
+    </head>
     <body>
         <p id="demo">Welcome!</p>
-        <button type="button" onclick="myFunction()">
-            Click Me!
+        <button type="button" onclick="changeText()">
+            Click me to change the text!
         </button>
-        <script>
-            function myFunction() {
-                if (document.getElementById('demo').innerHTML == "Welcome!") {
-                    document.getElementById('demo').innerHTML = "Nice job!"
-                } else {
-                    document.getElementById('demo').innerHTML = "Welcome!"
-                }
-            }
-        </script>
+        <br>
+        <button type="button" onclick="changeBackground()">
+            Click me to change the background!
+        </button>
     </body>
 </html>
