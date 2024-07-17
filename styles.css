@@ -3,10 +3,24 @@ body {
     color: white;
 }
 
+.contents {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    border-spacing: 50px;
+}
+
+/* .contents td {
+    border-radius: 10px;
+    background-color:silver;
+    color: black;
+} */
+
 .photoandname {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 10px;
 }
 
 .name {
