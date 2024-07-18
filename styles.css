@@ -10,6 +10,12 @@ body {
     border-spacing: 50px;
 }
 
+.contents td:hover {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+
 /* .contents td {
     border-radius: 10px;
     background-color:silver;
