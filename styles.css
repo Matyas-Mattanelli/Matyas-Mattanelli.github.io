@@ -1,26 +1,31 @@
 body {
     background-color: black;
     color: white;
+    font-family: 'EB Garamond';
 }
 
-.contents {
-    margin-left: auto;
-    margin-right: auto;
+.contents { 
+    list-style-type: none; /* Remove bullet points from the list */
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.contents li {
+    display: inline; /* Create a horizontal navigation bar */
+}
+
+.contents a {
     font-size: 25px;
-    border-spacing: 50px;
+    color: white; /* Change default blue color of links */
+    text-decoration: none; /* Remove automatic underlining of links */
+    padding: 15px;
 }
 
-.contents td:hover {
+.contents a:hover {
     background-color: white;
     color: black;
     border-radius: 10px;
 }
-
-/* .contents td {
-    border-radius: 10px;
-    background-color:silver;
-    color: black;
-} */
 
 .photoandname {
     display: flex;
