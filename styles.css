@@ -7,7 +7,6 @@ body {
 .contents { 
     list-style-type: none; /* Remove bullet points from the list */
     margin-bottom: 50px;
-    margin-top: 20px;
 }
 
 .contents li {
@@ -18,13 +17,13 @@ body {
     font-size: 25px;
     color: white; /* Change default blue color of links */
     text-decoration: none; /* Remove automatic underlining of links */
-    padding: 15px;
+    padding: 10px 20px;
 }
 
 .contents a:hover {
     background-color: white;
     color: black;
-    border-radius: 10px;
+    border-radius: 20%;
 }
 
 .photoandname {
@@ -35,9 +34,11 @@ body {
 }
 
 .name {
-    margin-left: 100px;
+    margin-left: 90px;
 }
 
 .photo {
     border-radius: 50%;
+    height: 200px;
+    width: 200px;
 }
