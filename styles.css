@@ -2,6 +2,7 @@ body {
     background-color: black;
     color: white;
     font-family: 'EB Garamond';
+    font-size: 20px;
 }
 
 .contents { 
@@ -15,12 +16,15 @@ body {
 
 .contents a {
     font-size: 25px;
-    color: white; /* Change default blue color of links */
-    text-decoration: none; /* Remove automatic underlining of links */
     padding: 10px 20px;
 }
 
-.contents a:hover {
+.link {
+    color: white; /* Change default blue color of links */
+    text-decoration: none; /* Remove automatic underlining of links */
+}
+
+.link:hover {
     background-color: white;
     color: black;
     border-radius: 20%;
@@ -41,4 +45,11 @@ body {
     border-radius: 50%;
     height: 200px;
     width: 200px;
+}
+
+.intro {
+    text-align: justify;
+    margin-left: 600px;
+    margin-right: 600px;
+    line-height: 1.5;
 }
