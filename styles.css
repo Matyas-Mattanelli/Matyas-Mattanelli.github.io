@@ -1,3 +1,7 @@
+:root {
+    --max-width: 800px; /* Define a reusable variable specifying maximum width of the elements */
+}
+
 body {
     background-color: black;
     color: white;
@@ -8,6 +12,8 @@ body {
 .contents { 
     list-style-type: none; /* Remove bullet points from the list */
     margin-bottom: 50px;
+    width: 100%;
+    max-width: var(--max-width);
 }
 
 .contents li {
@@ -35,6 +41,10 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 10px;
+    width: 100%;
+    max-width: var(--max-width);
+    margin-left: auto; /* For centering */
+    margin-right: auto;
 }
 
 .name {
@@ -49,7 +59,9 @@ body {
 
 .intro {
     text-align: justify;
-    margin-left: 600px;
-    margin-right: 600px;
+    width: 100%;
+    max-width: var(--max-width);
     line-height: 1.5;
+    margin-left: auto;
+    margin-right: auto;
 }
