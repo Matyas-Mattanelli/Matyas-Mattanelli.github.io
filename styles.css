@@ -9,6 +9,8 @@ body {
     font-size: 20px;
 }
 
+/* Navigation bar */
+
 .contents { 
     list-style-type: none; /* Remove bullet points from the list */
     margin-bottom: 50px;
@@ -36,6 +38,34 @@ body {
     border-radius: 20%;
 }
 
+li.projects {
+    display: inline-block;
+  }
+
+.projects-content {
+    display: none;
+    position: absolute;
+}
+
+.projects-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    background-color: white;
+}
+
+.projects-content a:hover {
+    background-color: grey;
+    color: white;
+}
+
+.projects:hover .projects-content {
+    display: block;
+}
+
+/* Photo and name */
+
 .photoandname {
     display: flex;
     align-items: center;
@@ -56,6 +86,8 @@ body {
     height: 200px;
     width: 200px;
 }
+
+/* Introduction */
 
 .intro {
     text-align: justify;
