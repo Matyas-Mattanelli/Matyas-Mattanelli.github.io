@@ -14,7 +14,8 @@ function showTitle() {
     if (letterIndex === (title.length + 1)) {
         letterIndex = 0
     }
-    setTimeout(showTitle, 300)
+    let timeOut = (letterIndex === 0) ? 500 : 100
+    setTimeout(showTitle, timeOut)
 }
 
 // Call the function
