@@ -86,6 +86,14 @@ li.projects {
     border-radius: 50%;
     height: 200px;
     width: 200px;
+    overflow: hidden; /* For rotation animation */
+    transition-duration: 0.8s; /* For rotation animation */
+    transition-property: transform; /* For rotation animation */
+}
+
+.photo:hover {
+    transform: rotate(360deg); /* For rotation animation */
+    -webkit-transform: rotate(360deg); /* For rotation animation */
 }
 
 /* Introduction */
