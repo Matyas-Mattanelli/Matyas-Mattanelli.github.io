@@ -7,15 +7,13 @@ const title = h1.textContent;
 // Define the last current index shown
 let letterIndex = 0;
 
-// Define a function showing the title up to the current index and repeatedly calling itself
+// Define a function gradually revealing the text of the given title
 function showTitle() {
     h1.textContent = title.slice(0, letterIndex)
     letterIndex++
-    if (letterIndex === (title.length + 1)) {
-        letterIndex = 0
+    if (letterIndex !== (title.length + 1)) { // Repeat itself until the end of the text is reached
+        setTimeout(showTitle, 100)
     }
-    let timeOut = (letterIndex === 0) ? 500 : 100
-    setTimeout(showTitle, timeOut)
 }
 
 // Call the function
