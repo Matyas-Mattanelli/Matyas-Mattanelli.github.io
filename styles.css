@@ -9,13 +9,18 @@ body {
     font-size: 20px;
 }
 
+/* Specify width for the required elements */
+
+.width {
+    width: 100%;
+    max-width: var(--max-width);
+}
+
 /* Navigation bar */
 
 .contents { 
     list-style-type: none; /* Remove bullet points from the list */
     margin-bottom: 50px;
-    width: 100%;
-    max-width: var(--max-width);
 }
 
 .contents li {
@@ -71,8 +76,6 @@ li.projects {
     align-items: center;
     justify-content: center;
     margin-top: 10px;
-    width: 100%;
-    max-width: var(--max-width);
     margin-left: auto; /* For centering */
     margin-right: auto;
 }
@@ -100,10 +103,12 @@ li.projects {
 
 .intro {
     text-align: justify;
-    width: 100%;
-    max-width: var(--max-width);
     line-height: 1.5;
     margin-left: auto;
     margin-right: auto;
+}
+
+#summary {
+    margin-top: 40px;
 }
 
