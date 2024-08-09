@@ -108,6 +108,17 @@ li.projects {
     margin-right: auto;
 }
 
+.in-text-link {
+    color: white; /* Change default blue color of links */
+    text-decoration: underline; /* Remove automatic underlining of links */
+}
+
+.in-text-link:hover {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
 #summary {
     margin-top: 40px;
 }
