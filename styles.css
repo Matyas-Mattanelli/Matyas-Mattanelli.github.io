@@ -123,3 +123,10 @@ li.projects {
     margin-top: 40px;
 }
 
+/* Section headings */
+
+.section-heading {
+    margin-left: auto;
+    margin-right: auto;
+}
+
