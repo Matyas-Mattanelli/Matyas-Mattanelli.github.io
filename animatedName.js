@@ -13,8 +13,14 @@ function showTitle() {
     letterIndex++
     if (letterIndex !== (title.length + 1)) { // Repeat itself until the end of the text is reached
         setTimeout(showTitle, 100)
+    } else { // Reset the index upon completion (for future runs)
+        letterIndex = 0
     }
 }
 
-// Call the function
+// Call the function when the webpage is loaded
 showTitle()
+
+// Call the function when the user hovers over the photo
+const photo = document.querySelector('img.photo');
+photo.onmouseenter = showTitle
