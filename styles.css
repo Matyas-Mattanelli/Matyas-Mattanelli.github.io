@@ -134,13 +134,16 @@ li.projects {
 
 .in-text-link {
     color: white; /* Change default blue color of links */
-    text-decoration: underline; /* Remove automatic underlining of links */
+    text-decoration: none; /* Remove automatic underlining of links */
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    padding: 1px 2px 3px 3px;
 }
 
 .in-text-link:hover {
     background-color: white;
     color: black;
-    border-radius: 5px;
 }
 
 #summary {
