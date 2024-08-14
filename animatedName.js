@@ -22,5 +22,5 @@ function showTitle() {
 showTitle()
 
 // Call the function when the user hovers over the photo
-const photo = document.querySelector('img.photo');
-photo.onmouseenter = showTitle
+// const photo = document.querySelector('img.photo');
+// photo.onmouseenter = showTitle
