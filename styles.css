@@ -11,7 +11,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    margin: 0;
+    margin: 0px 10px;
     padding: 0;
 }
 
@@ -174,6 +174,29 @@ li.projects {
     height: 300px;
     display: flex;
     overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+.slider::after{
+    content: "";
+    position: absolute;
+    height: 300px;
+    width: 50px;
+    background: linear-gradient(to right,  rgba(0, 0, 0, 1) 0%,rgba(0, 0, 0,0) 100%);
+    z-index: 2;
+}
+
+.slider::before{
+    content: "";
+    position: absolute;
+    height: 300px;
+    width: 50px;
+    background: linear-gradient(to right,  rgba(0, 0, 0, 1) 0%,rgba(0, 0, 0,0) 100%);
+    z-index: 2;
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
 }
 
 .slider img {
