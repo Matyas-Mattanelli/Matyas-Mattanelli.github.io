@@ -1,17 +1,4 @@
-// This script contains functions performing transitions between sections. Each time the current section is hidden and the new section displayed
-
-// Define a function for hiding all content except for the navigation bar
-function hideALL() {
-    // Get divs for all sections
-    const divs = document.querySelectorAll('.display'); 
-
-    // Hide all section divs
-    divs.forEach(elem => {
-        elem.classList.remove('display-active');
-        // elem.style.opacity = 0;
-        // elem.style.display = 'none';
-    })
-}
+// This script contains functions performing smooth transitions between sections. Each time the current section is hidden and the new section displayed
 
 // Define a function returning the title appropriate for the given section
 function getTitle(sectionId) {
@@ -32,22 +19,40 @@ function getTitle(sectionId) {
     }
 }
 
-// Define a function for showing the required section
-function showSection(sectionId) {
-    // Hide all sections
-    hideALL();
+// Define a function for hiding the current section
+function changeSection(sectionId) {
+    // Get the div of the new section
+    const newSection = document.getElementById(sectionId);
 
-    // Change the title
-    document.title = getTitle(sectionId);
+    // Get the div of the current section
+    const currentSection = document.getElementsByClassName('section-shown')[0]; 
 
-    // Find the required section div
-    const sectionDiv = document.getElementById(sectionId);
+    // Hide the current section only if the new section is different from the current section
+    if (newSection !== currentSection) {
+        // Change the opacity of the current section
+        currentSection.classList.remove('section-shown');
+        currentSection.classList.add('section-hidden');
 
-    // Show the required section
-    sectionDiv.classList.add('display-active');
-    // sectionDiv.style.display = 'block';
-    // sectionDiv.style.opacity = 1;
+        // Show the new section after the transition is complete
+        currentSection.addEventListener('transitionend', function() {
+            // Remove the current section from the display after the transition is complete
+            this.style.display = 'none';
+            newSection.style.display = 'block';
+
+            // Change the title
+            document.title = getTitle(sectionId);
+
+            // Show the new section
+            setTimeout(() => {
+                newSection.classList.remove('section-hidden');
+                newSection.classList.add('section-shown');
+            }, 10)
+            
+        }, { once: true });
+    }
 }
 
-// Start by showing the home section (all section are hidden as default)
-showSection('home');
+// Show the home page
+const homeSection = document.getElementById('home');
+homeSection.classList.remove('section-hidden');
+homeSection.classList.add('section-shown');

@@ -29,15 +29,16 @@ body {
 }
 
 /* Define display properties for sections */
-
-.display { /* Default for all sections */
+.section {
     opacity: 0;
-    display: none;
     transition: opacity 0.5s ease-in-out;
 }
 
-.display-active { /* Only for current section*/
-    display: block;
+.section-hidden { /* Default for all sections */
+    opacity: 0;
+}
+
+.section-shown { /* Only for current section*/
     opacity: 1;
 }
 

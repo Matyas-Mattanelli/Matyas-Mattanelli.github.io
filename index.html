@@ -8,11 +8,11 @@
 
         <div class="width" id="nav-bar">
             <ul>
-                <li onclick="showSection('home')">Home</li>
-                <li onclick="showSection('aboutme')">About me</li>
-                <li onclick="showSection('education')">Education</li>
-                <li onclick="showSection('work')">Work</li>
-                <li class="projects" onclick="showSection('projects')">
+                <li onclick="changeSection('home')">Home</li>
+                <li onclick="changeSection('aboutme')">About me</li>
+                <li onclick="changeSection('education')">Education</li>
+                <li onclick="changeSection('work')">Work</li>
+                <li class="projects" onclick="changeSection('projects')">
                     Projects
                     <div class="projects-content">
                         Project 1
@@ -20,11 +20,11 @@
                         Project 3
                     </div>
                 </li>
-                <li onclick="showSection('skills')">Skills</li>
+                <li onclick="changeSection('skills')">Skills</li>
             </ul>
         </div>
 
-        <div id="home" class="display">
+        <div id="home" class="section section-hidden" style="display: block;">
             <div class="photoandname width">
                 <img src="pics/photo.jpeg" alt="Profile photo" class="photo">
                 <h1 class="name">Mgr. Matyáš Mattanelli</h1>
@@ -38,15 +38,15 @@
             <hr class="width"">
             </p>
             <p class="intro width" id="summary">
-            &emsp;In the <span onclick="showSection('aboutme')" class="in-text-link">About me</span> section you can find some basic information such as my hobbies and interests.
-            The sections <span onclick="showSection('education')" class="in-text-link">Education</span> and <span onclick="showSection('work')" class="in-text-link">Work</span> are quite self-explanatory. The former captures 
+            &emsp;In the <span onclick="changeSection('aboutme')" class="in-text-link">About me</span> section you can find some basic information such as my hobbies and interests.
+            The sections <span onclick="changeSection('education')" class="in-text-link">Education</span> and <span onclick="changeSection('work')" class="in-text-link">Work</span> are quite self-explanatory. The former captures 
             my academic journey while the latter enumerates my professional experience. The list of my academic and personal projects can be found
-            <span onclick="showSection('projects')" class="in-text-link">here</span> along with their respective descriptions. The last section is devoted to my
-            <span onclick="showSection('skills')" class="in-text-link">Skills</span>, describing their level as well as how and where I acquired them.
+            <span onclick="changeSection('projects')" class="in-text-link">here</span> along with their respective descriptions. The last section is devoted to my
+            <span onclick="changeSection('skills')" class="in-text-link">Skills</span>, describing their level as well as how and where I acquired them.
             </p>
         </div>
 
-        <div id="aboutme" class="display">
+        <div id="aboutme" class="section section-hidden" style="display: none;">
             <h1 class="width section-heading">About me</h1>
             <div class="slider">
                 <img src="pics/coding.jpg" alt="Coding">
@@ -72,23 +72,23 @@
                 available <a class="in-text-link" href="https://www.csts.cz/cs/evidence/clenove/detailni-udaje-clena/10700099/soutezni-udaje/vysledky-soutezi">here</a>. I like to 
                 intertwine my passions and thus ballroom dancing has also been a vital part of my programming journey. Apart from several personal tools which I have developed to
                 track my competetive record, I also created a desktop application facilitating the organization of ballroom dancing competitions. You can read more about my projects
-                <a class="in-text-link" href="projects.html">here</a>.
+                <span class="in-text-link" onclick="changeSection('projects')">here</span>.
             </p>
         </div>
 
-        <div id="education" class="display">
+        <div id="education" class="section section-hidden" style="display: none;">
             <h1 class="width section-heading">Education</h1>
         </div>
 
-        <div id="work" class="display">
+        <div id="work" class="section section-hidden" style="display: none;">
             <h1 class="width section-heading">Work</h1>
         </div>
 
-        <div id="projects" class="display">
+        <div id="projects" class="section section-hidden" style="display: none;">
             <h1 class="width section-heading">Projects</h1>
         </div>
 
-        <div id="skills" class="display">
+        <div id="skills" class="section section-hidden" style="display: none;">
             <h1 class="width section-heading">Skills</h1>
         </div>
 
