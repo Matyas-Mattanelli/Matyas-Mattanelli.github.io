@@ -5,43 +5,95 @@
         <title>Mgr. Matyáš Mattanelli</title>
     </head>
     <body>
-        <div class="contents width">
+
+        <div class="width" id="nav-bar">
             <ul>
-                <li><a href="index.html" class="link">Home</a></li>
-                <li><a href="sections/aboutme.html" class="link">About me</a></li>
-                <li><a href="sections/education.html" class="link">Education</a></li>
-                <li><a href="sections/work.html" class="link">Work</a></li>
-                <li class="projects">
-                    <a href="sections/projects.html" class="link">Projects</a>
+                <li onclick="showSection('home')">Home</li>
+                <li onclick="showSection('aboutme')">About me</li>
+                <li onclick="showSection('education')">Education</li>
+                <li onclick="showSection('work')">Work</li>
+                <li class="projects" onclick="showSection('projects')">
+                    Projects
                     <div class="projects-content">
-                        <a href="#">Project 1</a>
-                        <a href="#">Project 2</a>
-                        <a href="#">Project 3</a>
+                        Project 1
+                        Project 2
+                        Project 3
                     </div>
                 </li>
-                <li><a href="sections/skills.html" class="link">Skills</a></li>
+                <li onclick="showSection('skills')">Skills</li>
             </ul>
         </div>
-        <div class="photoandname width">
-            <img src="pics/photo.jpeg" alt="Profile photo" class="photo">
-            <h1 class="name">Mgr. Matyáš Mattanelli</h1>
+
+        <div id="home" class="display">
+            <div class="photoandname width">
+                <img src="pics/photo.jpeg" alt="Profile photo" class="photo">
+                <h1 class="name">Mgr. Matyáš Mattanelli</h1>
+            </div>
+            <p class="intro width">
+            &emsp;Welcome to my personal website! Feel free to take a look around. Its main purpose is to familiarize
+            myself with the fundamentals of web development and also to showcase some of the interesting projects
+            I have been working on. I am open to suggestions so do not hesitate to <a href="mailto:matyas.mattanelli@gmail.com" class="in-text-link">contact me</a>.
+            The website is still under development so I apologize for any discrepancies. Below you can find a quick overview of the contents of each section. 
+            I hope You enjoy Your time here!
+            <hr class="width"">
+            </p>
+            <p class="intro width" id="summary">
+            &emsp;In the <span onclick="showSection('aboutme')" class="in-text-link">About me</span> section you can find some basic information such as my hobbies and interests.
+            The sections <span onclick="showSection('education')" class="in-text-link">Education</span> and <span onclick="showSection('work')" class="in-text-link">Work</span> are quite self-explanatory. The former captures 
+            my academic journey while the latter enumerates my professional experience. The list of my academic and personal projects can be found
+            <span onclick="showSection('projects')" class="in-text-link">here</span> along with their respective descriptions. The last section is devoted to my
+            <span onclick="showSection('skills')" class="in-text-link">Skills</span>, describing their level as well as how and where I acquired them.
+            </p>
         </div>
-        <p class="intro width">
-        &emsp;Welcome to my personal website! Feel free to take a look around. Its main purpose is to familiarize
-        myself with the fundamentals of web development and also to showcase some of the interesting projects
-        I have been working on. I am open to suggestions so do not hesitate to <a href="mailto:matyas.mattanelli@gmail.com" class="in-text-link">contact me</a>.
-        The website is still under development so I apologize for any discrepancies. Below you can find a quick overview of the contents of each section. 
-        I hope You enjoy Your time here!
-        <hr class="width"">
-        </p>
-        <p class="intro width" id="summary">
-        &emsp;In the <a href="sections/aboutme.html" class="in-text-link">About me</a> section you can find some basic information such as my hobbies and interests.
-        The sections <a href="sections/education.html" class="in-text-link">Education</a> and <a href="sections/work.html" class="in-text-link">Work</a> are quite self-explanatory. The former captures 
-        my academic journey while the latter enumerates my professional experience. The list of my academic and personal projects can be found
-        <a href="sections/projects.html" class="in-text-link">here</a> along with their respective descriptions. The last section is devoted to my
-        <a href="sections/skills.html" class="in-text-link">Skills</a>, describing their level as well as how and where I acquired them.
-        </p>
+
+        <div id="aboutme" class="display">
+            <h1 class="width section-heading">About me</h1>
+            <div class="slider">
+                <img src="pics/coding.jpg" alt="Coding">
+                <img src="pics/ballroom.png" alt="Ballroom">
+                <img src="pics/calisthenics.jpg" alt="Calisthenics">
+                <img src="pics/jogging.jpg" alt="Jogging">
+                <img src="pics/coding.jpg" alt="Coding">
+                <img src="pics/ballroom.png" alt="Ballroom">
+                <img src="pics/calisthenics.jpg" alt="Calisthenics">
+                <img src="pics/jogging.jpg" alt="Jogging">
+            </div>
+            <p class="width intro">
+                &emsp;My name is Matyáš Mattanelli and I am currently pursuing a Master's degree in Computer Science - Artificial Intelligence with a specialization in Machine Learning.
+                I hold a Bachelor's degree in Economics and Finance and a Master's degree in Economics and Finance with a specialization in Financial Markets and Data Analysis. My 
+                studies of Economics provided me with a strong background in Mathematics, Statistics, Econometrics, and Data Analysis. During my Master studies I was introduced
+                to coding (firstly in R and later in Python) and subsequently to Machine Learning and I fell in love with both. I am currently improving my knowledge of Computer
+                Science in order to be able to pursue a carrer as a Data Scientist/Machine Learning Engineer.
+            </p>
+            
+            <p class="width intro summary">
+                &emsp; Even though I spend a significant amount of time in front of my laptop either studying or coding up my personal projects, sports constitute a very important part
+                of my life. Apart from Jogging and Calisthenics, I am a competetive Ballroom Dancer. In case you are interested, the results of me and my partner's competitions are 
+                available <a class="in-text-link" href="https://www.csts.cz/cs/evidence/clenove/detailni-udaje-clena/10700099/soutezni-udaje/vysledky-soutezi">here</a>. I like to 
+                intertwine my passions and thus ballroom dancing has also been a vital part of my programming journey. Apart from several personal tools which I have developed to
+                track my competetive record, I also created a desktop application facilitating the organization of ballroom dancing competitions. You can read more about my projects
+                <a class="in-text-link" href="projects.html">here</a>.
+            </p>
+        </div>
+
+        <div id="education" class="display">
+            <h1 class="width section-heading">Education</h1>
+        </div>
+
+        <div id="work" class="display">
+            <h1 class="width section-heading">Work</h1>
+        </div>
+
+        <div id="projects" class="display">
+            <h1 class="width section-heading">Projects</h1>
+        </div>
+
+        <div id="skills" class="display">
+            <h1 class="width section-heading">Skills</h1>
+        </div>
+
+        <script src="scripts/transitions.js"></script>
         <script src="scripts/animatedName.js"></script>
-        <script src="scripts/linkTransition.js"></script>
+        <script src="scripts/sliderPause.js"></script>
     </body>
 </html>

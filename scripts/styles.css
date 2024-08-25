@@ -2,6 +2,10 @@
     --max-width: 800px; /* Define a reusable variable specifying maximum width of the elements */
 }
 
+html {
+    overflow-y: scroll; /* Show the scrollbar as default to prevent width changes */
+}
+
 body {
     background-color: black;
     color: white;
@@ -13,16 +17,8 @@ body {
     background-position: center;
     margin: 0px 10px;
     padding: 0;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-
-body.fade-out {
-    opacity: 0;
-}
-
-body.fade-in {
-    opacity: 1;
+    /* opacity: 0; */
+    /* transition: opacity 0.5s ease-in-out; */
 }
 
 /* Specify width for the required elements */
@@ -32,9 +28,22 @@ body.fade-in {
     max-width: var(--max-width);
 }
 
+/* Define display properties for sections */
+
+.display { /* Default for all sections */
+    opacity: 0;
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.display-active { /* Only for current section*/
+    display: block;
+    opacity: 1;
+}
+
 /* Navigation bar */
 
-.contents { 
+#nav-bar { 
     list-style-type: none; /* Remove bullet points from the list */
     top: 0; /* Adjust this to control vertical placement */
     left: 50%;
@@ -49,34 +58,29 @@ body.fade-in {
     backdrop-filter: blur(5px);
 }
 
-.contents li {
+#nav-bar li {
     display: inline; /* Create a horizontal navigation bar */
     font-size: 25px;
     padding: 5px 20px;
     border-radius: 10px;
     color: white;
     text-decoration: none;
-    transition: background-color 1s ease-in-out;
     transition: box-shadow 0.75s ease-in-out;
 }
 
-.contents li:hover {
+#nav-bar li:hover {
     background-color: rgba(255, 255, 255);
     cursor: pointer;
     box-shadow: 4px 2px rgba(255, 255, 255, 0.4);
     color:black;
 }
 
-.contents li:active {
+#nav-bar li:active {
     background-color: rgba(255, 255, 255, 0.4);
     cursor: pointer;
     box-shadow: 4px 2px rgba(255, 255, 255, 0.2);
 }
 
-.contents a, .contents a:hover, .contents a:active {
-    color: inherit; /* Change default blue color of links */
-    text-decoration: inherit; /* Remove automatic underlining of links */
-}
 
 li.projects {
     display: inline-block;
@@ -87,7 +91,7 @@ li.projects {
     position: absolute;
 }
 
-.projects-content a {
+/* .projects-content a {
     color: black;
     text-decoration: none;
     display: block;
@@ -98,7 +102,7 @@ li.projects {
 .projects-content a:hover {
     background-color: grey;
     color: white;
-}
+} */
 
 .projects:hover .projects-content {
     display: block;
@@ -155,6 +159,7 @@ li.projects {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
     padding: 1px 2px 3px 3px;
+    cursor: pointer;
 }
 
 .in-text-link:hover {
