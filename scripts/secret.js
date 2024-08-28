@@ -20,8 +20,9 @@ elem.onclick = function() {
     img.style.transform = 'translate(-50%,-50%)';
     img.style.width = '600px';
     img.style.height = '600px';
-    img.style.opacity = '0'; // Start hidden
+    img.style.opacity = '1'; // Start hidden
     img.style.transition = 'opacity 0.5s ease-in-out'; // Transition to appear slowly
+    img.style.animation = 'jump-in 2s'
 
     // Create a text element
     const textDiv = document.createElement('div');
@@ -38,17 +39,12 @@ elem.onclick = function() {
     textDiv.style.fontSize = '96px';
     textDiv.style.fontWeight = 'bold';
     textDiv.style.fontFamily = ['Romantic', 'sans-serif'];
-    textDiv.style.opacity = 0; // Start hidden
+    textDiv.style.opacity = '1'; // Start hidden
     textDiv.style.transition = 'opacity 0.5s ease-in-out'; // Transition to appear slowly
+    textDiv.style.animation = 'jump-in 2s'
 
     // Add the text to the document
     document.body.appendChild(textDiv);
-
-    // Show the elements
-    setTimeout(() => {
-        img.style.opacity = 1;
-        textDiv.style.opacity = 1;
-    }, 10)
 
     // Hide the elements after 5 seconds
     setTimeout(() => {

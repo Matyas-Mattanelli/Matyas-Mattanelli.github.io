@@ -237,5 +237,19 @@ body {
     }
 }
 
+/* Secret animation */
+
+@keyframes jump-in {
+    0% {
+        transform: translate(-50%,-50%) scale(0);
+    }
+    75% {
+        transform: translate(-50%,-50%) scale(1.2);
+    }
+    100% {
+        transform: translate(-50%,-50%) scale(1);
+    }
+}
+
 
 
