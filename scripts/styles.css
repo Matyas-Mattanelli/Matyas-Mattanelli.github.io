@@ -17,8 +17,6 @@ body {
     background-position: center;
     margin: 0px 10px;
     padding: 0;
-    /* opacity: 0; */
-    /* transition: opacity 0.5s ease-in-out; */
 }
 
 /* Specify width for the required elements */
@@ -32,6 +30,7 @@ body {
 .section {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
+    padding-bottom: 10px; /* To prevent overlay with copyright*/
 }
 
 .section-hidden { /* Default for all sections */
@@ -54,9 +53,9 @@ body {
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     border: none;
+    backdrop-filter: blur(5px);
     display: flex;
     justify-content: stretch;
-    backdrop-filter: blur(5px);
 }
 
 #nav-bar li {
@@ -249,6 +248,22 @@ body {
     100% {
         transform: translate(-50%,-50%) scale(1);
     }
+}
+
+/* Footer */
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 10px;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    border: none;
+    backdrop-filter: blur(5px);
+    text-align: center;
 }
 
 
