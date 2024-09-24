@@ -1,5 +1,7 @@
 :root {
     --max-width: 800px; /* Define a reusable variable specifying maximum width of the elements */
+    --slider-img-size: 200px; /* Define a variable specifying the size of the images in the slider */
+    --slider-no-img: 6; /* Define a variable specifying the number of imgs in the slider */
 }
 
 html {
@@ -189,9 +191,9 @@ body {
 .slider {
     margin-right: auto;
     margin-left: auto;
-    max-width: 800px;
+    max-width: var(--max-width);
     width: 100%;
-    height: 300px;
+    height: var(--slider-img-size);
     display: flex;
     overflow: hidden;
     position: relative;
@@ -201,7 +203,7 @@ body {
 .slider::after{ /* Fade effect (left) */
     content: "";
     position: absolute;
-    height: 300px;
+    height: var(--slider-img-size);
     width: 50px;
     background: linear-gradient(to right,  rgba(0, 0, 0, 1) 0%,rgba(0, 0, 0,0) 100%);
     z-index: 2;
@@ -210,7 +212,7 @@ body {
 .slider::before{ /* Fade effect (right) */
     content: "";
     position: absolute;
-    height: 300px;
+    height: var(--slider-img-size);
     width: 50px;
     background: linear-gradient(to right,  rgba(0, 0, 0, 1) 0%,rgba(0, 0, 0,0) 100%);
     z-index: 2;
@@ -220,10 +222,10 @@ body {
 }
 
 .slider img {
-    width: 300px;
-    height: 300px;
+    width: var(--slider-img-size);
+    height: var(--slider-img-size);
     border-radius: 10px;
-    animation: moveRight 10s linear infinite;
+    animation: moveRight 15s linear infinite;
     margin-right: 10px;
 }
 
@@ -232,7 +234,7 @@ body {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-1240px);
+        transform: translateX(calc(-1 * ((var(--slider-img-size) + 10px) * var(--slider-no-img)) + 10px)); /* Move the imgs by the combine width of all images (including the margin) (should be -1250px currently) */
     }
 }
 
