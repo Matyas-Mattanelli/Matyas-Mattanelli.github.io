@@ -20,7 +20,7 @@ function getTitle(sectionId) {
 }
 
 // Define a function for hiding the current section
-function changeSection(sectionId) {
+function changeSection(sectionId, addToHistory=true) {
     // Get the div of the new section
     const newSection = document.getElementById(sectionId);
 
@@ -49,10 +49,24 @@ function changeSection(sectionId) {
             }, 10)
             
         }, { once: true });
+
+        // Add the current section to the history to allow for correct behavior of the back and forward buttons
+        if (addToHistory) {
+            window.history.pushState(sectionId, "", `#${sectionId}`)
+        }
     }
 }
+
+// Handle back and forward navigation
+window.addEventListener('popstate', (event) => {
+    // Change the section to the previous or next one
+    if (event.state) {
+        changeSection(event.state, false)
+    }
+});
 
 // Show the home page
 const homeSection = document.getElementById('home');
 homeSection.classList.remove('section-hidden');
 homeSection.classList.add('section-shown');
+window.history.pushState("home", "", "#home") // Add it to the history and change the URL to allow for the correct behavior of back and forward buttons
