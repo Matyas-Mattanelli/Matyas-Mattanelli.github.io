@@ -130,12 +130,10 @@ body {
     margin-left: 90px;
     width: 450px;
     text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.3);
-    transition: transform 0.5s ease;
 }
 
 .name:hover {
     cursor: default;
-    transform: scale(1.2);
 }
 
 .photo {
