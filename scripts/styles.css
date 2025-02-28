@@ -150,6 +150,34 @@ body {
     transform: scale(1.2) rotate(360deg);
 }
 
+/* Social links */
+
+.social-links {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    margin-top: 10px;
+    width: fit-content;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.social-links img {
+    height: 30px;
+    width: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: transform 0.5s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
+
 /* Introduction */
 
 .intro {
