@@ -280,6 +280,37 @@ body {
     }
 }
 
+/* Education */
+
+.school {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+.school div {
+    margin-bottom: 5px;
+}
+
+.school.justify {
+    text-align: justify;
+}
+
+.edu-key {
+    font-style: italic;
+}
+
+.school a {
+    color: white; /* Change default blue color of links */
+    text-decoration: none; /* Remove automatic underlining of links */
+    display: inline-block;
+    transition: transform 0.5s ease;
+}
+
+.school a:hover {
+    transform: scale(1.2);
+}
+
 /* Footer */
 
 #footer {

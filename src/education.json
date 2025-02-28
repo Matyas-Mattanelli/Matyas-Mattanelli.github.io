@@ -1,0 +1,138 @@
+{
+    "0": {
+        "Type": "Master's degree",
+        "Institution": "Charles University",
+        "Faculty": "Faculty of Mathemathics and Physics",
+        "Institute": "",
+        "Location": "Prague",
+        "Starting date": "2023-09",
+        "Completion date": "present",
+        "Field of study": "Computer Science - Artificial Intelligence",
+        "Specialization": "Machine Learning",
+        "Mandatory courses": {
+            "Data Structures I": "NTIN066",
+            "Introduction to Complexity and Computability": "NTIN090",
+            "Artificial Intelligence I": "NAIL069",
+            "Artificial Intelligence II": "NAIL070"
+        },
+        "Elective courses": {
+            "Neural Networks": "NAIL002",
+            "Statistical Methods in Natural Language Processing I": "NPFL067",
+            "Evolutionary Algorithms I": "NAIL025",
+            "Deep learning": "NPFL138",
+            "Data Mining": "NDBI023",
+            "Applications of Neural Networks Theory": "NAIL013",
+            "Machine Learning": "NAIL029",
+            "Evolutionary Robotics": "NAIL065",
+            "Machine Learning in Bioinformatics": "NAIL107",
+            "Computer vision": "NPGR036",
+            "Social networks and their analysis": "NAIL116",
+            "Database Systems": "NDBI025",
+            "Information Retrieval": "NPFL103",
+            "Machine Learning in Computer Vision": "NPGR035"
+        },
+        "Description": "My second Master's degree allowed me to enhance my knowledge of Computer Science and Machine Learning. While obtaining a deep understanding of the key concepts, I also gained a lot of experience working on various projects."
+    },
+    "1": {
+        "Type": "Master's degree",
+        "Institution": "Charles University",
+        "Faculty": "Faculty of Social Sciences",
+        "Institute": "Institute of Economic Studies",
+        "Location": "Prague",
+        "Starting date": "2021-09",
+        "Completion date": "2023-09",
+        "Field of study": "Economics and Finance",
+        "Specialization": "Data Analysis and Financial Markets",
+        "Mandatory courses": {
+            "Advanced Econometrics": "JEM217",
+            "Advanced Microeconomics": "JEM215",
+            "Artificial Macroeconomics": "JEM216",
+            "Financial Markets": "JEM037",
+            "Financial Econometrics I": "JEM059",
+            "Asset Pricing": "JEM092",
+            "Applied Econometrics": "JEM116",
+            "Data Science with R I": "JEM227",
+            "Data Science with R II": "JEM220"
+        },
+        "Elective courses": {
+            "Data Processing in Python": "JEM207",
+            "Advanced Mathematical Statistics": "JEM019",
+            "Financial Modelling Using MS Excel and VBA": "JEM128",
+            "FinTech and Blockchain": "JEM233",
+            "Introduction to Machine Learning with Python": "JEM214",
+            "Financial Econometrics II": "JEM061",
+            "Advanced Topics in Corporate Finance": "JEM230"
+        },
+        "Description": "During my first Master's degree I learned some advanced concepts from Econometrics and was also introduced to Machine Learning. In addition, I attended my first Python course.",
+        "Note": "Graduated with honors"
+    },
+    "2": {
+        "Type": "Bachelor's degree",
+        "Institution": "Charles University",
+        "Faculty": "Faculty of Social Sciences",
+        "Institute": "Institute of Economic Studies",
+        "Location": "Prague",
+        "Starting date": "2018-09",
+        "Completion date": "2021-09",
+        "Field of study": "Economics and Finance",
+        "Specialization": "",
+        "Mandatory courses": {
+            "Principals of Economics I": "JEB101",
+            "Principals of Economics II": "JEB102",
+            "Macroeconomics I": "JEB114",
+            "Macroeconomics II": "JEB115",
+            "Foundations of Law": "JEB023",
+            "Fundamentals of Private Law": "JEB024",
+            "European Economic Integration": "JEB026",
+            "Fincancial Economics": "JEB027",
+            "Microeconomics I": "JEB104",
+            "Microeconomics II": "JEB108",
+            "Introductory Statistics": "JEB142",
+            "Statistics": "JEB105",
+            "Econometrics I": "JEB109",
+            "Econometrics II": "JEB110",
+            "English for Economics I": "JLB003",
+            "English for Economics II": "JLB004",
+            "Mathematics I": "NMMA701",
+            "Mathematics II": "NMMA702",
+            "Mathematics III": "NMMA703",
+            "Mathematics IV": "NMMA704",
+            "Introduction to Political Science": "JPB198"
+            
+        },
+        "Elective courses": {
+            "Accounting I": "JEB046",
+            "Seminar of Mathematical Analysis I": "JEB058",
+            "Seminar of Mathematical Analysis and Algebra II": "JEB059",
+            "Financial Service Law": "JEM204",
+            "Advanced Data Analysis in MS Excel": "JEB111",
+            "Current Affairs": "JEB055",
+            "Academic English I": "JLM001",
+            "Academic English II": "JLM002",
+            "Financial Accounting": "JEB044",
+            "Behavioral Economics and Finance": "JEB147",
+            "Mathematics for Economists": "JEB117"
+        },
+        "Description": "Throughout my bachelor studies I acquired a very strong foundations in Mathematics, Statistics, and Economics. I also attended most of my courses in English and even enrolled in Academic English to enhance my English proficiency even further.",
+        "Note": "Graduated with honors"
+        
+    },
+    "3": {
+        "Type": "Secondary education",
+        "Institution": "Gymnázium na Vítězné pláni",
+        "Faculty": "",
+        "Institute": "",
+        "Location": "Prague",
+        "Starting date": "2014-09",
+        "Completion date": "2018-06",
+        "Field of study": "General Education",
+        "Specialization": "",
+        "Mandatory courses": {},
+        "Elective courses": {
+            "German Language": "",
+            "Economics": "",
+            "Advanced Mathematics":""
+        },
+        "Description": "I attended a quite prestigious grammar school in Prague. Apart from general education, I prioritized improving my English and also focused on Mathematics and Economics."
+    }
+}
