@@ -285,19 +285,40 @@ body {
 .school {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    border-collapse: separate;
+    border-spacing: 5px;
 }
 
-.school div {
-    margin-bottom: 5px;
-}
-
-.school.justify {
-    text-align: justify;
+.school tr td {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .edu-key {
+    /* font-style: italic; */
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.centered-text {
+    text-align: center;
     font-style: italic;
+}
+
+.school-title {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+.school-description {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    text-align: justify;
 }
 
 .school a {

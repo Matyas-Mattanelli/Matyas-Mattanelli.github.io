@@ -1,5 +1,5 @@
 {
-    "0": {
+    "2nd Master's degree": {
         "Type": "Master's degree",
         "Institution": "Charles University",
         "Faculty": "Faculty of Mathemathics and Physics",
@@ -33,7 +33,7 @@
         },
         "Description": "My second Master's degree allowed me to enhance my knowledge of Computer Science and Machine Learning. While obtaining a deep understanding of the key concepts, I also gained a lot of experience working on various projects."
     },
-    "1": {
+    "1st Master's degree": {
         "Type": "Master's degree",
         "Institution": "Charles University",
         "Faculty": "Faculty of Social Sciences",
@@ -66,7 +66,7 @@
         "Description": "During my first Master's degree I learned some advanced concepts from Econometrics and was also introduced to Machine Learning. In addition, I attended my first Python course.",
         "Note": "Graduated with honors"
     },
-    "2": {
+    "Bachelor's degree": {
         "Type": "Bachelor's degree",
         "Institution": "Charles University",
         "Faculty": "Faculty of Social Sciences",
@@ -117,8 +117,8 @@
         "Note": "Graduated with honors"
         
     },
-    "3": {
-        "Type": "Secondary education",
+    "Grammar school": {
+        "Type": "Grammar school",
         "Institution": "Gymnázium na Vítězné pláni",
         "Faculty": "",
         "Institute": "",

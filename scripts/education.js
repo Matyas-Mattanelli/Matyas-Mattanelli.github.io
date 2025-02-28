@@ -8,37 +8,69 @@ const courseLink = (code) => `https://is.cuni.cz/studium/predmety/index.php?do=p
 function constructEducation(data) {
     // Loop through all schools (entries in the object) and add a div for them
     Object.entries(data).forEach(
-        ([id, info]) => {
-            const div = document.createElement('div') // Create the div to store the current school
-            div.className = 'school width' // Specify the class for CSS
+        ([name, info]) => {
+            // Add title and description
+            const title = document.createElement('h2'); // Create a title for the school
+            title.textContent = name; // Specify the name as the title
+            title.className = 'width school-title'
+            eduDiv.appendChild(title) // Add the title to the div
+            const description = document.createElement('div') // Create a div holding the description
+            description.textContent = info['Description'] // Specify the description
+            description.className = 'width school-description' // Justify the contents of the description
+            eduDiv.appendChild(description) // Add the description
+
+            // Create a table with information
+            const table = document.createElement('table'); // Create a table to store the current school information
+            table.className = 'school width'; // Specify the class for CSS
             Object.entries(info).forEach( // Loop through the entries containing the information about the school
                 ([key, value]) => {
-                    if (value !== '') {
-                        const infoDiv = document.createElement('div'); // Create an element to store the current information
-                        if (key.includes('courses')) { // Handle courses separately (they contain a list)
-                            infoDiv.innerHTML = `<span class="edu-key">${key}:</span> `; // Specify the type of information
-                            Object.entries(value).forEach( // Loop through the courses and add them to the div
+                    if (value !== '' && key !== 'Description') { // Skip the non-specified values and the description (already added above)
+                        const row = document.createElement('tr'); // Create a row to store the current information
+                        const tdKey = document.createElement('td'); // Create a cell to store the key name for the current information
+                        tdKey.textContent = key; // Specify the key name of the current information
+                        tdKey.className = 'edu-key'; // Specify a class name for the key for CSS
+                        row.appendChild(tdKey); // Add the cell with key to the row
+                        if (key.includes('courses')) { // Handle courses separately (they will span multiple rows)
+                            tdKey.setAttribute('rowspan', Object.keys(value).length.toString()); // Span the key over all rows with information
+                            let first = true; // Create an indicator for the first course which need to be handled separately (it needs to be added along with the key)
+                            Object.entries(value).forEach( // Loop through the courses and create row for each
                                 ([course, code]) => {
-                                    const a = document.createElement('a'); // Create a hypertext element used for the given course
-                                    a.textContent = `${course}, `; // Specify the course
-                                    a.setAttribute('href', courseLink(code)) // Specify the link to the course
-                                    a.setAttribute('target', '_blank') // Make sure the website opens in new tab
-                                    // a.className = 'in-text-link'
-                                    infoDiv.appendChild(a) // Add the course to the current information div
+                                    const tdVal = document.createElement('td'); // Create a table cell element
+                                    tdVal.className = 'centered-text'; // Make sure the value is centered
+                                    if (code !== "") { // If available, add the link to the course web page
+                                        const a = document.createElement('a'); // Create a hypertext element used for the given course
+                                        a.textContent = course; // Specify the course
+                                        a.setAttribute('href', courseLink(code)); // Specify the link to the course
+                                        a.setAttribute('target', '_blank'); // Make sure the website opens in new tab
+                                        tdVal.appendChild(a); // Insert the hypertext element into the cell
+                                    } else {
+                                        tdVal.textContent = course; // Specify the course
+                                    }
+                                    if (first) { // Add the first course along with the key
+                                        first = false;
+                                        row.appendChild(tdVal); // Add the cell to the table
+                                        table.appendChild(row); // Add the row to the table
+                                    } else { // Create a new row for each additional course
+                                        const newRow = document.createElement('tr');
+                                        newRow.appendChild(tdVal);
+                                        table.appendChild(newRow);
+                                    }
                                 }
                             );
-                        } else {
-                            infoDiv.innerHTML = `<span class="edu-key">${key}:</span> ${value}`;
-                            infoDiv.className = 'justify'
+                        } else { // For other information, there is only a single cell required
+                            const tdVal = document.createElement('td');
+                            tdVal.textContent = value;
+                            tdVal.className = 'centered-text'; // Make sure the value is centered
+                            row.appendChild(tdVal);
+                            table.appendChild(row); // Add the row to the table
                         }
-                        div.appendChild(infoDiv); // Add the given info to the div
                     }
                 }
             );
-            const hr = document.createElement('hr') // Create an element representing a horizontal line separating individual schools
-            hr.className = 'width' // Fit the line to the specified width
-            div.appendChild(hr) // Add the element to the main div
-            eduDiv.appendChild(div); // Add the school to the education page
+            eduDiv.appendChild(table); // Add the school to the education page
+            // const hr = document.createElement('hr') // Create an element representing a horizontal line separating individual schools
+            // hr.className = 'width' // Fit the line to the specified width
+            // eduDiv.appendChild(hr) // Add the line after the table
         }
     );
 }
