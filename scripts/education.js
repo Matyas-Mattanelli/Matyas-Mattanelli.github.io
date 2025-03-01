@@ -9,22 +9,34 @@ function constructEducation(data) {
     // Loop through all schools (entries in the object) and add a div for them
     Object.entries(data).forEach(
         ([name, info]) => {
-            // Add title and description
+            // Add title, logo, and description
             const title = document.createElement('h2'); // Create a title for the school
             title.textContent = name; // Specify the name as the title
             title.className = 'width school-title'
             eduDiv.appendChild(title) // Add the title to the div
+            const descriptionLogo = document.createElement('div') // Create a div holding the description and the logo
+            descriptionLogo.className = 'width school-desc-logo' // Specify the class name for CSS
             const description = document.createElement('div') // Create a div holding the description
             description.textContent = info['Description'] // Specify the description
-            description.className = 'width school-description' // Justify the contents of the description
-            eduDiv.appendChild(description) // Add the description
+            description.className = 'school-desc' // Class name for CSS
+            const logo = document.createElement('a') // Create an a element to store the link to the school page
+            logo.setAttribute('href', info['Link']) // Specify the link to the school page 
+            logo.setAttribute('target', '_blank') // Open the link in a new tab
+            logo.className = 'school-logo' // Add class name for CSS
+            const logoImg = document.createElement('img') // Create an image element for the logo
+            logoImg.setAttribute('src', info['Logo']) // Specify the link to the image
+            logoImg.className = 'school-logo-img' // Specify the class name for CSS
+            logo.appendChild(logoImg) // Connect the link element and img element
+            descriptionLogo.appendChild(logo) // Add the logo
+            descriptionLogo.appendChild(description) // Add the description
+            eduDiv.appendChild(descriptionLogo) // Add the description
 
             // Create a table with information
             const table = document.createElement('table'); // Create a table to store the current school information
             table.className = 'school width'; // Specify the class for CSS
             Object.entries(info).forEach( // Loop through the entries containing the information about the school
                 ([key, value]) => {
-                    if (value !== '' && key !== 'Description') { // Skip the non-specified values and the description (already added above)
+                    if (value !== '' && key !== 'Description' && key !== 'Logo' && key !== 'Link') { // Skip the non-specified values and the description (already added above) and the logo
                         const row = document.createElement('tr'); // Create a row to store the current information
                         const tdKey = document.createElement('td'); // Create a cell to store the key name for the current information
                         tdKey.textContent = key; // Specify the key name of the current information

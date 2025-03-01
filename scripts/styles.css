@@ -314,11 +314,35 @@ body {
     margin-top: 40px;
 }
 
-.school-description {
+.school-desc-logo {
+    display: flex;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
+}
+
+.school-desc {
     text-align: justify;
+    flex: 1;
+}
+
+.school-logo-img {
+    width: 100%;
+    height: auto;
+}
+
+.school-logo {
+    flex: 0 0 20%; /* Fixed 20% width */
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    transition: transform 0.5s ease;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.school-logo:hover{
+    transform: scale(1.2);
 }
 
 .school a {

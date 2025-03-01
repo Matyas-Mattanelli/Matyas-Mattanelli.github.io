@@ -31,7 +31,9 @@
             "Information Retrieval": "NPFL103",
             "Machine Learning in Computer Vision": "NPGR035"
         },
-        "Description": "My second Master's degree allowed me to enhance my knowledge of Computer Science and Machine Learning. While obtaining a deep understanding of the key concepts, I also gained a lot of experience working on various projects."
+        "Description": "My second Master's degree allowed me to enhance my knowledge of Computer Science and Machine Learning. While obtaining a deep understanding of the key concepts, I also gained a lot of experience working on various projects.",
+        "Logo": "https://quantum.karlov.mff.cuni.cz/~laugust/logomff.gif",
+        "Link": "https://www.mff.cuni.cz/"
     },
     "1st Master's degree": {
         "Type": "Master's degree",
@@ -64,7 +66,9 @@
             "Advanced Topics in Corporate Finance": "JEM230"
         },
         "Description": "During my first Master's degree I learned some advanced concepts from Econometrics and was also introduced to Machine Learning. In addition, I attended my first Python course.",
-        "Note": "Graduated with honors"
+        "Note": "Graduated with honors",
+        "Logo": "https://www.ff.cuni.cz/wp-content/themes/ffuk/img/logo-cuni.png",
+        "Link": "https://ies.fsv.cuni.cz/en"
     },
     "Bachelor's degree": {
         "Type": "Bachelor's degree",
@@ -114,7 +118,9 @@
             "Mathematics for Economists": "JEB117"
         },
         "Description": "Throughout my bachelor studies I acquired a very strong foundations in Mathematics, Statistics, and Economics. I also attended most of my courses in English and even enrolled in Academic English to enhance my English proficiency even further.",
-        "Note": "Graduated with honors"
+        "Note": "Graduated with honors",
+        "Logo": "https://www.ff.cuni.cz/wp-content/themes/ffuk/img/logo-cuni.png",
+        "Link": "https://ies.fsv.cuni.cz/en"
         
     },
     "Grammar school": {
@@ -133,6 +139,8 @@
             "Economics": "",
             "Advanced Mathematics":""
         },
-        "Description": "I attended a quite prestigious grammar school in Prague. Apart from general education, I prioritized improving my English and also focused on Mathematics and Economics."
+        "Description": "I attended a quite prestigious grammar school in Prague. Apart from general education, I prioritized improving my English and also focused on Mathematics and Economics.",
+        "Logo": "https://www.gvp.cz/rectina/images/logo.png",
+        "Link": "https://www.gvp.cz/"
     }
 }
