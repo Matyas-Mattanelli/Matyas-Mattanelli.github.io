@@ -80,15 +80,12 @@ function constructEducation(data) {
                 }
             );
             eduDiv.appendChild(table); // Add the school to the education page
-            // const hr = document.createElement('hr') // Create an element representing a horizontal line separating individual schools
-            // hr.className = 'width' // Fit the line to the specified width
-            // eduDiv.appendChild(hr) // Add the line after the table
         }
     );
 }
 
 // Define a function loading the information and costructing the div
-function loadJSONFile(fileName) {
+export function loadJSONFile(fileName, callback) {
     fetch(fileName)
         .then(response => {
             if (!response.ok) {
@@ -96,10 +93,10 @@ function loadJSONFile(fileName) {
             }
             return response.json();  
         })
-        .then(data => constructEducation(data))
+        .then(data => callback(data))
         .catch(error => console.error(`Failed to fetch ${fileName}: `, error)); 
 }
 
 // Construct the div
-loadJSONFile('src/education.json');
+loadJSONFile('src/education.json', constructEducation);
 
