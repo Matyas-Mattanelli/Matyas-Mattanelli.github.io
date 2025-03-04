@@ -2,6 +2,7 @@
     --max-width: 800px; /* Define a reusable variable specifying maximum width of the elements */
     --slider-img-size: 200px; /* Define a variable specifying the size of the images in the slider */
     --slider-no-img: 6; /* Define a variable specifying the number of imgs in the slider */
+    --text-background: rgba(255, 255, 255, 0.2);
 }
 
 html {
@@ -185,13 +186,16 @@ body {
     line-height: 1.5;
     margin-left: auto;
     margin-right: auto;
+    background-color: var(--text-background);
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .in-text-link {
     color: white; /* Change default blue color of links */
     text-decoration: none; /* Remove automatic underlining of links */
     backdrop-filter: blur(20px);
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     padding: 1px 2px 3px 3px;
     cursor: pointer;
@@ -200,10 +204,6 @@ body {
 .in-text-link:hover {
     background-color: white;
     color: black;
-}
-
-#summary {
-    margin-top: 40px;
 }
 
 /* Section headings */
@@ -324,6 +324,10 @@ body {
 .school-desc {
     text-align: justify;
     flex: 1;
+    background-color: var(--text-background);
+    padding: 10px;
+    border-radius: 10px;
+    line-height: 1.5;
 }
 
 .school-logo-img {
