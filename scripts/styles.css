@@ -295,6 +295,7 @@ body {
     border-radius: 5px;
     padding-left: 10px;
     padding-right: 10px;
+    background-color: var(--text-background);
 }
 
 .edu-key {
