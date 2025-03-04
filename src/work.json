@@ -4,55 +4,62 @@
         "Employer": "Český svaz tanečního sportu z.s.",
         "Period": "2024-09 - present",
         "Location": "Remote",
-        "Description": "- I analyzed the evaluations of adjudicators at Czech ballroom dancing competitions\n- My work included scraping publicly available data, processing them, and then performing the analysis\n- I utilized the Python programming language\n- The results were delivered in Microsoft Excel",
-        "Skills": ["Python", "MS Excel", "VBA"]
+        "Description": "I analyzed the evaluations of adjudicators at Czech ballroom dancing competitions. My work entailed scraping publicly available data, processing them, and then performing the analysis. I utilized the Python programming language and delivered the results in Microsoft Excel",
+        "Skills": ["Python", "MS Excel", "VBA"],
+        "Logo": "https://czechdance.latinofestival.cz/images/csts.png"
     },
     "Python Developer for TŠ StormDance z.s.": {
         "Position": "Python Developer",
         "Employer": "TŠ StormDance z.s.",
         "Period": "2024-01 - present",
         "Location": "Remote",
-        "Description": "-Developing software facilitating the organization of ballroom dancing competitions.\n-My work included web scraping, data processing, desktop application development, and website development\n-I used Python for backend and HTML, JavaScript, and CSS for the front-end",
-        "Skills": ["Python", "MS Excel", "VBA", "HTML", "JavaScript", "CSS"]
+        "Description": "I developed a software facilitating the organization of ballroom dancing competitions. My work included web scraping, data processing, desktop application development, and website development. I used Python for backend and HTML, JavaScript, and CSS for the front-end",
+        "Skills": ["Python", "MS Excel", "VBA", "HTML", "JavaScript", "CSS"],
+        "Logo": "https://stormdance.cz/wp-content/uploads/2020/08/Kopie-souboru-SD_logo_zaklad.svg"
     },
     "Data Scientist for PwC": {
         "Position": "Data Scientist",
-        "Employer": "PwC",
+        "Employer": "PricewaterhouseCoopers",
         "Period": "2022-03 - 2024-06",
         "Location": "Prague",
-        "Description": "- Member of the Financial Risk Modelling team\n- Development and validation of credit risk models",
-        "Skills": ["Python", "MS Excel", "VBA"]
+        "Description": "As a member of the Financial Risk Modelling team I participated in the development and validation of credit risk models",
+        "Skills": ["Python", "R", "MS Excel", "VBA", "SQL"],
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/PricewaterhouseCoopers_Logo.svg/150px-PricewaterhouseCoopers_Logo.svg.png"
     },
     "Forwarding Assistant for TTESA": {
         "Position": "Forwarding Assistant",
         "Employer": "Toyota Tsusho Europe",
         "Period": "2017-09 - 2022-02",
         "Location": "Jirny",
-        "Description": "Invoicing, order compilation, organization of the archive.",
-        "Skills": ["MS Excel"]
+        "Description": "As an assistent in the forwarding department I was tasked with invoicing, order compilation, and organization of the archive.",
+        "Skills": ["MS Excel"],
+        "Logo": "https://images.seeklogo.com/logo-png/38/1/toyota-tsusho-logo-png_seeklogo-385830.png?v=1956421125726621032"
     },
     "Personal Assistant in NAUTIS": {
         "Position": "Personal Assistant",
         "Employer": "NAUTIS - Národní ústav pro autismus",
         "Period": "2021-07",
         "Location": "Křížlice",
-        "Description": "Personal assistance for clients with autism. Summer camp.",
-        "Skills": []
+        "Description": "I worked as a personal assistant for clients with autism at a summer camp.",
+        "Skills": [],
+        "Logo": "https://www.nautis.cz/wp-content/uploads/2023/07/logo_nautis_long_CZ_positive_color_RGB-e1689620915608-150x28.png"
     },
     "Summer Camp Counselor": {
         "Position": "Counselor",
         "Employer": "Občanské sdružení Neumětel",
         "Period": "2016-08 - 2021-08",
         "Location": "Rabštejn nad Střelou",
-        "Description": "Counselor at a summar camp for children",
-        "Skills": []
+        "Description": "I helped organize and participated in a summer camp for children.",
+        "Skills": ["Leadership", "Teamwork"],
+        "Logo": "https://www.taborrabstejn.cz/wp-content/uploads/2024/12/cropped-logo-e1733515122816.png"
     },
     "Consultant for 180DC": {
         "Position": "Consultant",
         "Employer": "180 Degrees Consulting",
         "Period": "2020-10 - 2020-12",
         "Location": "Prague",
-        "Description": "",
-        "Skills": []
+        "Description": "I worked as a consultant for a non-profit student organization.",
+        "Skills": ["Teamwork"],
+        "Logo": "https://cdn.prod.website-files.com/63c0930a7ee820653e9b5c84/649a94693ac2c7927df83337_180DC%20Expand%20Crop.png"
     }
 }
