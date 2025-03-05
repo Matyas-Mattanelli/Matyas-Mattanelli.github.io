@@ -1,0 +1,100 @@
+{
+    "Artificial neural networks in black-box optimization": {
+        "Description": "I am currently working on my second Master's Thesis at the Faculty of Mathematics and Physics. I am concerned with comparing different black-box optimization methods for neural networks.",
+        "Key words": ["Master's thesis", "Optimization", "Neural networks"],
+        "Software": ["Python", "Latex"],
+        "Github repo": "",
+        "Pic": "pics/projects/master_thesis.png"
+    },
+    "Analysis of Czech ballroom dancing competitions": {
+        "Description": "I analyzed the evaluations of adjudicators in Czech ballroom dancing competitions.",
+        "Key words": ["Data analysis", "Ballroom dancing"],
+        "Software": ["Python", "MS Excel", "VBA"],
+        "Github repo": "",
+        "Pic": "https://czechdance.latinofestival.cz/images/csts.png"
+    },
+    "Tool for the organization of Czech ballroom dancing competitions": {
+        "Description": "I developed a Python script and later a desktop application facilitating the organization of ballroom dancing competitions. The main aim was to automate repetitive tasks which were previously performed manually. My work involved webscraping, data consistency verification, and data processing.",
+        "Key words": ["Ballroom dancing", "Desktop application"],
+        "Software": ["Python", "MS Excel", "VBA"],
+        "Github repo": "",
+        "Pic": "pics/projects/stormdance.svg"
+    },
+    "Predicting the results of ballroom dancing competitions": {
+        "Description": "As the final project for my Neural Networks course, I developed an Artificial Neural Network classifier predicting the probability that a participant in a ballroom dancing competition will obtain a Final.",
+        "Key words": ["Neural network", "Ballroom dancing", "Classification"],
+        "Software": ["Python"],
+        "Github repo": "https://github.com/Matyas-Mattanelli/Competition-predictor",
+        "Pic": "https://czechdance.latinofestival.cz/images/csts.png"
+    },
+    "Predicting movie ratings": {
+        "Description": "For the final project of my Data Mining course, I developed a predictive model for movie ratings obtained from ČSFD. The main utilized method was linear regression. In addition, I estimated a language model based on the movie previews.",
+        "Key words": ["Movie ratings", "Linear regression", "Language model"],
+        "Software": ["Python"],
+        "Github repo": "https://github.com/Matyas-Mattanelli/Movie-ratings-prediction",
+        "Pic": "https://img.csfd.cz/documents/marketing/logos/icon-white-red/icon-white-red-small.png"
+    },
+    "Playing DINO using NEAT": {
+        "Description": "During the Evolutionary Robotics course I implemented an agent playing the popular Dino game using the NEAT algorithm.",
+        "Key words": ["DINO", "NEAT"],
+        "Software": ["Python"],
+        "Github repo": "https://github.com/Matyas-Mattanelli/Dino-NEAT",
+        "Pic": "pics/projects/dino.png"
+    },
+    "Predicting COVID-19 deaths": {
+        "Description": "As the final project for my Machine Learning in Bioinformatics course, I developed a predictive model for the number of deaths caused by COVID-19. The main estimation method was linear regression. The explanatory variables in the model were country-specific indicators such as GDP per capita, Median Age, etc.",
+        "Key words": ["COVID-19", "Predictive modelling", "Linear regression"],
+        "Software": ["Python"],
+        "Github repo": "https://github.com/Matyas-Mattanelli/Predicting-COVID-19-Deaths",
+        "Pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/SARS-CoV-2_without_background.png/597px-SARS-CoV-2_without_background.png"
+    },
+    "Network analysis of Czech Ballroom Dancing adjudicators": {
+        "Description": "For the final project of the Social Networks and Their Analysis course, I analyzed a network of adjudicators. The nodes in the network were the individual adjudicators and the edges represented the correlations of their evaluations.",
+        "Key words": ["Network analysis", "Ballroom dancing"],
+        "Software": ["Python"],
+        "Github repo": "https://github.com/Matyas-Mattanelli/Ballroom-adjudicators-network-analysis",
+        "Pic": "https://czechdance.latinofestival.cz/images/csts.png"
+    },
+    "Database for the Czech Ballroom Dancing Championship": {
+        "Description": "I compiled a comprehensive database of the results of Czech ballroom dancing championships ranging from 2001 to 2023. In addition, I developed an Android mobile application allowing for viewing not only the individual competitions but also the competitors and their results throughout the years. The application is available upon request.",
+        "Key words": ["Database", "Ballroom dancing", "Mobile application"],
+        "Software": ["Python"],
+        "Github repo": "https://github.com/Matyas-Mattanelli/CSTS-MCR",
+        "Pic": "https://czechdance.latinofestival.cz/images/csts.png"
+    },
+    "Binning numerical variables in credit risk models": {
+        "Description": "In my first Master's thesis at the Institute of Economic studies I inspected the effect of binning numerical variables at the performance of models in credit risk. I received the final grade A.",
+        "Key words": ["Master's thesis", "Credit risk"],
+        "Software": ["Python", "Latex"],
+        "Github repo": "https://github.com/Matyas-Mattanelli/Master-Thesis",
+        "Pic": "pics/projects/master_thesis.png"
+    },
+    "Asset Pricing": {
+        "Description": "Along with my colleagues, I implemented some conventional Asset Pricing methods using the R programming language. This was part of the Asset Pricing course at IES.",
+        "Key words": ["Asset pricing"],
+        "Software": ["R"],
+        "Github repo": "https://github.com/Matyas-Mattanelli/Asset-Pricing",
+        "Pic": "pics/projects/R.png"
+    },
+    "Volatility of McDonald's Stock Returns": {
+        "Description": "As part of one of the econometrics courses at IES, I investigated the volatility of stock returns of the McDonald's company. Specifically, I was concerned with the effects of COVID-19 and the Russian invasion of Ukraine.",
+        "Key words": ["Volatility", "Stock returns", "McDonald's", "GARCH", "COVID-19"],
+        "Software": ["R"],
+        "Github repo": "https://github.com/Matyas-Mattanelli/Volatility-of-McDonalds-Stock-Returns",
+        "Pic": "pics/projects/mcdonalds.png"
+    },
+    "Effectivness of COVID-19 vaccinations": {
+        "Description": "In this very interesting project I investigated the effects of vaccinations at the number of new cases of COVID-19. Along with my colleague, we found that vaccinations appear to decrease the number of COVID-19 cases with statistical significance.",
+        "Key words": ["COVID-19", "Vaccinations", "System GMM"],
+        "Software": ["R", "Python"],
+        "Github repo": "https://github.com/Matyas-Mattanelli/Effectiveness-Of-Covid-19-Vaccinations",
+        "Pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/SARS-CoV-2_without_background.png/597px-SARS-CoV-2_without_background.png"
+    },
+    "Webscraper of Zlaté Stránky": {
+        "Description": "My very first large Python project was a webscraper of the website Zlaté Stránky. Along with my colleague, we create a comprehensive database of Prague restaurants",
+        "Key words": ["Webscraping", "Restaurants", "Zlaté Stránky"],
+        "Software": ["Python"],
+        "Github repo": "https://github.com/Matyas-Mattanelli/Webscraper-Zlate-Stranky",
+        "Pic": "http://www.ondrejsmerda.cz/wp-content/uploads/2016/03/ZLAT%C3%89_STR%C3%81NKY_1symbol-300x196.jpg"
+    }
+}
