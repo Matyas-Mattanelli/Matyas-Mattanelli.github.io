@@ -1,0 +1,39 @@
+{
+    "Python": {
+        "Score": 90,
+        "Libraries": ["pandas", "numpy", "scikit-learn", "selenium", "keras", "pytorch", "statsmodels", "kivy", "tkinter"],
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/115px-Python-logo-notext.svg.png"
+    },
+    "R" : {
+        "Score": 75,
+        "Logo": "pics/projects/R.png"
+    },
+    "Julia": {
+        "Score": 50,
+        "Logo": "pics/skills/julia.png"
+    },
+    "MS Excel": {
+        "Score": 95,
+        "Logo": "pics/skills/excel.png"
+    },
+    "VBA": {
+        "Score": 70,
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Microsoft_Visual_Basic_for_Applications_logo.svg/800px-Microsoft_Visual_Basic_for_Applications_logo.svg.png"
+    },
+    "MATLAB": {
+        "Score": 50,
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Matlab_Logo.png/670px-Matlab_Logo.png"
+    },
+    "Latex": {
+        "Score": 85,
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/LaTeX_logo.svg/800px-LaTeX_logo.svg.png"
+    },
+    "SQL": {
+        "Score": 75,
+        "Logo": "pics/skills/sql.png"
+    },
+    "Git": {
+        "Score": 75,
+        "Logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/512px-Git-logo.svg.png"
+    }
+}

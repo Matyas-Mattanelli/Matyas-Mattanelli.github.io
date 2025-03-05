@@ -6,7 +6,7 @@ const projectsDiv = document.getElementById('projects');
 
 // Define a function constructing the div containing the projects
 function constructProjects(data) {
-    // Loop through all positions (entries in the object) and add a div for them
+    // Loop through all projects (entries in the object) and add a div for them
     Object.entries(data).forEach(
         ([name, info]) => {
             // Add title, logo, and description
