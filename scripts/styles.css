@@ -83,39 +83,6 @@ body {
     box-shadow: 4px 2px rgba(255, 255, 255, 0.2);
 }
 
-
-#nav-bar-projects {
-    position: relative;
-    display: inline-block;
-  }
-
-#nav-bar-projects-content {
-    display: none;
-    position: absolute;
-    margin-top: 5px;
-    left: 0;
-}
-
-#nav-bar-projects-content div {
-    color: black;
-    display: block;
-    text-align: left;
-    background-color: white;
-    padding: 5px 20px;
-    font-size: 20px;
-    background-color: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(5px);
-    color: white;
-}
-
-#nav-bar-projects-content div:hover {
-    background-color: grey;
-}
-
-#nav-bar-projects:hover #nav-bar-projects-content {
-    display: block;
-}
-
 /* Photo and name */
 
 .photoandname {
