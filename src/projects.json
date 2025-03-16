@@ -1,6 +1,6 @@
 {
     "Artificial neural networks in black-box optimization": {
-        "Description": "I am currently working on my second Master's Thesis at the Faculty of Mathematics and Physics. I am concerned with comparing different black-box optimization methods for neural networks.",
+        "Description": "I am currently working on my second Master's Thesis at the Faculty of Mathematics and Physics. I am concerned with the role of neural networks in black-box optimization.",
         "Key words": ["Master's thesis", "Optimization", "Neural networks"],
         "Software": ["Python", "Latex"],
         "Github repo": "",
