@@ -55,6 +55,9 @@ function changeSection(sectionId, addToHistory=true) {
             window.history.pushState(sectionId, "", `#${sectionId}`)
         }
     }
+
+    // Scroll to the top of the page
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 // Handle back and forward navigation
