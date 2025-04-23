@@ -67,7 +67,11 @@ function constructProjects(data) {
                             );
                         } else { // For other information, there is only a single cell required
                             const tdVal = document.createElement('td');
-                            tdVal.textContent = value;
+                            if (key === "Link") { // Add a hypertext reference for the link
+                                tdVal.innerHTML = `<a href="${value}">${value}</a>`
+                            } else {
+                                tdVal.textContent = value;
+                            }
                             tdVal.className = 'centered-text'; // Make sure the value is centered
                             row.appendChild(tdVal);
                             table.appendChild(row); // Add the row to the table

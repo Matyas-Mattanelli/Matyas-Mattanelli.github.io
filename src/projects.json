@@ -1,4 +1,12 @@
 {
+    "Ballroom dancing database": {
+        "Description": "In one of my largest projects to date I have developed a full-stack application using the results of Czech ballroom dancing competitions. I scraped and cleaned the data from 2001 to present using Python and stored them in a PostgreSQL database. To access the database I built an API using the FastAPI framework. The frontend is developed in React. Both the website and the API are hosted on a VPS. The website allows users to search for a ballroom dancing competitor and view their competitive record. While still in development, the website is already available at the link below.",
+        "Key words": ["Ballroom dancing", "Website", "Database"],
+        "Software": ["Python", "FastAPI", "JavaScript", "React", "PostgreSQL", "Linux"],
+        "Github repo": "https://github.com/Matyas-Mattanelli/ballroom-database-frontend",
+        "Pic": "https://raw.githubusercontent.com/Matyas-Mattanelli/ballroom-database-frontend/refs/heads/master/src/assets/logo.png",
+        "Link": "http://64.226.72.40/"
+    },
     "Artificial neural networks in black-box optimization": {
         "Description": "I am currently working on my second Master's Thesis at the Faculty of Mathematics and Physics. I am concerned with the role of neural networks in black-box optimization.",
         "Key words": ["Master's thesis", "Optimization", "Neural networks"],
